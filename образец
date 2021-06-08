@@ -1,0 +1,72 @@
+def multijk(n,x,y,z):
+    start_time=time.time()
+    s=n#size - размер
+    m1=np.copy(mat1)
+    m2=np.copy(mat2)
+    empt_m1=np.copy(zeromat)
+    for i in range(len(m1)):
+        for j in range(len(m2[0])):
+            for k in range(len(m2)):
+                empt_m1[i][j]+=m1[i][k]*m2[k][j]
+    print(empt_m1)
+    print("time:",time.time()-start_time)
+def multjki(n,x,y,z):
+    start_time=time.time()
+    s=n#size - размер
+    m3=np.copy(mat1)
+    m4=np.copy(mat2)
+    empt_m2=np.copy(zeromat)
+    for j in range(len(m4[0])):        
+        for k in range(len(m4)):
+            for i in range(len(m3)):
+                empt_m2[i][j]+=m3[i][k]*m4[k][j]
+    print(empt_m2)
+    print("time:",time.time()-start_time)
+def multjik(n,x,y,z):
+    start_time=time.time()
+    s=n#size - размер
+    m5=np.copy(mat1)
+    m6=np.copy(mat2)
+    empt_m3=np.copy(zeromat)
+    for j in range(len(m6[0])):
+        for i in range(len(m5)):      
+            for k in range(len(m6)):
+                empt_m3[i][j]+=m5[i][k]*m6[k][j]
+    print(empt_m3)
+    print("time:",time.time()-start_time)
+def multikj(n,x,y,z):
+    start_time=time.time()
+    s=n#size - размер
+    m7=np.copy(mat1)
+    m8=np.copy(mat2)
+    empt_m4=np.copy(zeromat)
+    for i in range(len(m7)):
+        for k in range(len(m8)):
+            for j in range(len(m8[0])):           
+                empt_m4[i][j]+=m7[i][k]*m8[k][j]
+    print(empt_m4)
+    print("time:",time.time()-start_time)
+def multkji(n,x,y,z):
+    start_time=time.time()
+    s=n#size - размер
+    m9=np.copy(mat1)
+    m10=np.copy(mat2)
+    empt_m5=np.copy(zeromat)
+    for k in range(len(m10)):
+        for j in range(len(m10[0])):
+            for i in range(len(m9)):                
+                empt_m5[i][j]+=m9[i][k]*m10[k][j]
+    print(empt_m5)
+    print("time:",time.time()-start_time)
+def multkij(n,x,y,z):
+    start_time=time.time()
+    s=n#size - размер
+    m11=np.copy(mat1)
+    m12=np.copy(mat2)
+    empt_m6=np.copy(zeromat)  
+    for k in range(len(m12)):
+        for i in range(len(m11)):
+            for j in range(len(m12[0])):           
+                empt_m6[i][j]+=m11[i][k]*m12[k][j]
+    print(empt_m6)
+    print("time:",time.time()-start_time)
