@@ -70,3 +70,13 @@ def multkij(n,x,y,z):
                 empt_m6[i][j]+=m11[i][k]*m12[k][j]
     print(empt_m6)
     print("time:",time.time()-start_time)
+n=randint(5,10)#генератор размера матрицы,
+mat1=np.random.uniform(1,10,size=(n,n))#1 матрица для умножения
+mat2=np.random.uniform(1,10,size=(n,n))#2 мартица для умножения
+zeromat=np.zeros((n,n))#нулевая матрица, куда записываем результат умножения
+multijk(n,mat1,mat2,zeromat)
+multjki(n,mat1,mat2,zeromat)
+multjik(n,mat1,mat2,zeromat)
+multikj(n,mat1,mat2,zeromat)
+multkji(n,mat1,mat2,zeromat)
+multkij(n,mat1,mat2,zeromat)
