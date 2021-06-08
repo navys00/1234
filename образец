@@ -1,3 +1,8 @@
+import numpy as np
+import time 
+import matplotlib.pyplot as plt
+from random import randint
+%matplotlib inline
 def multijk(n,x,y,z):
     start_time=time.time()
     s=n#size - размер
